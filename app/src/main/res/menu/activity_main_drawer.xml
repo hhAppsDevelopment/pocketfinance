@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/overview"
+            android:checked="true"
+            android:title="Overview" />
+        <item
+            android:id="@+id/nav_checking"
+            android:icon="@drawable/account_balance"
+            android:title="Checking account" />
+        <item
+            android:id="@+id/nav_investments"
+            android:icon="@drawable/investments"
+            android:title="Investments" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/transactions"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/shipment"
+            android:title="Shipments" />
+    </group>
+
+    <item android:title="Backup &amp; restore">
+        <menu>
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/backup"
+                android:title="Backup data (encrypted)" />
+            <item
+                android:id="@+id/nav_restore"
+                android:icon="@drawable/restore"
+                android:title="Restore data" />
+        </menu>
+    </item>
+
+</menu>
