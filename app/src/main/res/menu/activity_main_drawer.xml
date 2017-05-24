@@ -23,6 +23,10 @@
             android:id="@+id/nav_orders"
             android:icon="@drawable/shipment"
             android:title="Shipments" />
+        <item
+            android:id="@+id/nav_exchange"
+            android:icon="@drawable/exchange"
+            android:title="Exchange rates"/>
     </group>
 
     <item android:title="Backup &amp; restore">

@@ -66,29 +66,23 @@ public class MainActivity extends AppCompatActivity
 
         int included = 0;
         if (id == R.id.nav_overview) {
-            included = R.layout.overview;
+
         } else if (id == R.id.nav_checking) {
-            included = R.layout.checking;
+
         } else if (id == R.id.nav_investments) {
-            setContentView(R.layout.investments);
+
         } else if (id == R.id.nav_transactions) {
-            setContentView(R.layout.transactions);
+
         } else if (id == R.id.nav_orders) {
-            setContentView(R.layout.orders);
+
         } else if (id == R.id.nav_backup) {
 
         } else if (id == R.id.nav_restore) {
 
         }
 
-        LinearLayout mainLayout = (LinearLayout) findViewById(R.id. main_container);
-        LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layout = inflater.inflate(included, null);
-        mainLayout.removeAllViews();
-        mainLayout.addView(layout);
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
