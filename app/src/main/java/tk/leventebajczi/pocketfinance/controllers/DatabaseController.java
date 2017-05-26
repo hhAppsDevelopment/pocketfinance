@@ -1,4 +1,4 @@
-package tk.leventebajczi.pocketfinance.Controllers;
+package tk.leventebajczi.pocketfinance.controllers;
 
 import android.content.ContentValues;
 import android.content.Context;

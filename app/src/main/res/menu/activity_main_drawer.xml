@@ -39,6 +39,10 @@
                 android:id="@+id/nav_restore"
                 android:icon="@drawable/restore"
                 android:title="Restore data" />
+            <item
+                android:id="@+id/nav_schedule"
+                android:icon="@drawable/schedule"
+                android:title="Schedule backup" />
         </menu>
     </item>
 
