@@ -1,5 +1,6 @@
 package tk.leventebajczi.pocketfinance.database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -13,6 +14,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class db extends SQLiteOpenHelper {
     private static String DB_PATH;
@@ -126,6 +128,18 @@ public class db extends SQLiteOpenHelper {
             als.add(c.getString(c.getColumnIndex(column)));
         }
         return als;
+    }
+
+    public int update(String table, ContentValues values, String condition){
+        return myDataBase.update(table, values, condition,null);
+    }
+
+    public int insert(String table, ContentValues values){
+        return (int)myDataBase.insert(table, null, values);
+    }
+
+    public int delete(String table, String condition){
+        return myDataBase.delete(table, condition,null);
     }
 
 }
