@@ -1,4 +1,4 @@
-package tk.leventebajczi.pocketfinance.database;
+package tk.leventebajczi.pocketfinance.Controllers;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,16 +14,15 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-public class db extends SQLiteOpenHelper {
+public class DatabaseController extends SQLiteOpenHelper {
     private static String DB_PATH;
     private static String DB_NAME;
 
     private SQLiteDatabase myDataBase;
     private final Context myContext;
 
-    public db(Context context) {
+    public DatabaseController(Context context) {
         super(context, DB_NAME, null, 1);
         DB_PATH = context.getApplicationInfo().dataDir + "/database";
         DB_NAME = "table.sqlite";
